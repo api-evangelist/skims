@@ -1,8 +1,24 @@
 aid: skims
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/skims.png
 name: Skims
-description: 'Skims is a company surfaced as a portfolio company of thrive-capital and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'SKIMS is an American shapewear, loungewear, and apparel brand co-founded in 2019 by
+  Kim Kardashian with Jens and Emma Grede, headquartered in Los Angeles. It sells solutionwear,
+  underwear, loungewear, swim, and ready-to-wear direct-to-consumer through skims.com and via wholesale
+  partners, and is the official underwear partner of the NBA, WNBA, and USA Basketball. Surfaced as a
+  portfolio company of Thrive Capital and added to the API Evangelist network as a company profile.
+  This consumer retail brand publishes no public developer API surface; the profile carries a live
+  domain-security probe of its web infrastructure.'
 url: https://raw.githubusercontent.com/api-evangelist/skims/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Retail
+- Apparel
+- Ecommerce
+- Direct-to-Consumer
+- Fashion
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/skims-domain-security.yml
 - type: Website
   url: https://skims.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
